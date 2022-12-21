@@ -10,6 +10,11 @@ class Calculatrice
     {
         return $n1 * $n2;
     }
+
+    public static function displayPI()
+    {
+        echo "<p>" . self::$PI . "</p>";
+    }
 }
 
 // Attributs
@@ -20,4 +25,3 @@ echo "<p>" . $calc::$PI . "</p>";
 // Méthodes
 echo "<p>" . Calculatrice::multiplication(12.2, Calculatrice::$PI) . "</p>";
 echo "<p>" . $calc::multiplication(12.2, Calculatrice::$PI) . "</p>";
-
